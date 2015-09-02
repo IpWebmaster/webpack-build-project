@@ -1,8 +1,8 @@
-.test1 {
-  border: 2px solid red
+.test3 {
+  border: 1px solid red
 }
 .none {
-  display: none;
+  display: block;
 }
 
 .test {
@@ -11,3 +11,4 @@
   display: -ms-flexbox;
   display: flex;
 }
+/*# sourceMappingURL=styles.css.map*/
