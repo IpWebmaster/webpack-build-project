@@ -1,0 +1,19 @@
+{
+  "name": "webpack-build-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IpWebmaster/webpack-build-project.git"
+  },
+  "author": "iv.popov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IpWebmaster/webpack-build-project/issues"
+  },
+  "homepage": "https://github.com/IpWebmaster/webpack-build-project#readme"
+}
