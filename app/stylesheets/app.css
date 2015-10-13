@@ -1,0 +1,7 @@
+@import "test/bootstrap.css";
+@import "test.css";
+
+.test10 {
+  border: 5px solid red;
+  display: flex;
+}

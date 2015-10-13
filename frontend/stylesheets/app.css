@@ -1,7 +1,0 @@
-@import "test/test.css";
-@import "test.css";
-
-.test {
-  border: 1px solid red;
-  display: flex;
-}
