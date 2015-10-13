@@ -14,13 +14,11 @@ module.exports = function(_path) {
             extensions: ["", ".js", ".css"]
         },
         entry: {
-            app: ["./scripts/app.js", "./stylesheets/app.css"],
-            core: ["./stylesheets/core.css"]
+            app: ["./scripts/app.js", "./stylesheets/app.css"]
         },
         output: {
-            path: path.join(_path, 'dist'),
-            publicPath: '/dist/',
-            filename: "bundle.js",
+            path: path.join(_path, './dist'),
+            filename: "main.js",
             sourceMapFilename: "[file].map"
         },
         module: {
@@ -29,10 +27,11 @@ module.exports = function(_path) {
                     test: /\.css$/,
                     loader: ExtractTextPlugin.extract("style-loader", "css-loader?sourceMap!postcss-loader")
                 },
-                {test: /\.woff(2)?(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=application/font-woff" },
-                {test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=application/octet-stream" },
-                {test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "file" },
-                {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=image/svg+xml" }
+                {
+                    test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
+                    loader: 'file?name=[path][name].[ext]',
+                    exclude: /node_modules/
+                }
             ]
         },
         postcss: function () {
